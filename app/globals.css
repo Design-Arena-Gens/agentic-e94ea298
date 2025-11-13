@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+:root {
+  --background: radial-gradient(circle at top left, #ff2fb9 0%, #20155a 45%, #03010f 100%);
+  --foreground: #f7f7fb;
+}
+
+@theme inline {
+  --color-background: transparent;
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-display);
+  --font-display: var(--font-display);
+  --font-glitch: var(--font-glitch);
+}
+
+body {
+  min-height: 100vh;
+  background: var(--background);
+  background-attachment: fixed;
+  background-size: cover;
+  color: var(--foreground);
+  font-family: var(--font-display), "Arial Black", Gadget, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+@layer utilities {
+  .text-shadow-neon {
+    text-shadow:
+      0 1px 1px rgba(255, 255, 255, 0.4),
+      0 0 12px #ff007a,
+      0 0 24px #6600ff;
+  }
+
+  .glitch {
+    position: relative;
+    display: inline-block;
+  }
+
+  .glitch::before,
+  .glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .glitch::before {
+    color: #67ff9b;
+    transform: translate3d(4px, -4px, 0);
+    mix-blend-mode: screen;
+    text-shadow: 0 0 12px rgba(103, 255, 155, 0.8);
+  }
+
+  .glitch::after {
+    color: #ff3838;
+    transform: translate3d(-5px, 3px, 0);
+    mix-blend-mode: screen;
+    text-shadow: 0 0 12px rgba(255, 56, 56, 0.8);
+  }
+
+  .grid-shimmer {
+    background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.08) 25%, rgba(255, 255, 255, 0.02) 50%, rgba(255, 255, 255, 0.08) 75%);
+    background-size: 200% 200%;
+    animation: shimmer 8s ease-in-out infinite;
+  }
+
+  .neon-border {
+    box-shadow:
+      0 0 12px rgba(255, 0, 170, 0.7),
+      inset 0 0 12px rgba(51, 255, 255, 0.4);
+  }
+
+  .spin-slow {
+    animation: spin 60s linear infinite;
+  }
+
+  .floaty {
+    animation: float 6s ease-in-out infinite;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -12px, 0);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

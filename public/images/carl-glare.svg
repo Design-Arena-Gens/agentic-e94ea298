@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 420">
+  <defs>
+    <radialGradient id="base" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#fff9c4" stop-opacity="0.8"/>
+      <stop offset="55%" stop-color="#ff3860" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#0a0016" stop-opacity="0.2"/>
+    </radialGradient>
+    <linearGradient id="beam" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00ffea"/>
+      <stop offset="50%" stop-color="#5f2eff"/>
+      <stop offset="100%" stop-color="#ff0070"/>
+    </linearGradient>
+  </defs>
+  <rect width="620" height="420" fill="#050013"/>
+  <circle cx="310" cy="210" r="200" fill="url(#base)" opacity="0.9"/>
+  <g fill="none" stroke="url(#beam)" stroke-width="8">
+    <path d="M150 160 Q310 120 470 160"/>
+    <path d="M150 260 Q310 300 470 260"/>
+  </g>
+  <g fill="url(#beam)" opacity="0.9">
+    <path d="M190 210 L250 170 L260 210 L250 250 Z"/>
+    <path d="M430 210 L370 170 L360 210 L370 250 Z"/>
+  </g>
+  <circle cx="220" cy="210" r="20" fill="#ffffff"/>
+  <circle cx="400" cy="210" r="20" fill="#ffffff"/>
+  <path d="M260 210 H360" stroke="#ffffff" stroke-width="6" stroke-linecap="round" opacity="0.75"/>
+  <text x="310" y="360" text-anchor="middle" font-family="'Impact', sans-serif" font-size="42" fill="#ffffff">
+    GLARE PROTOCOL
+  </text>
+</svg>

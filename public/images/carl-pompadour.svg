@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 420">
+  <defs>
+    <linearGradient id="midnight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#110026"/>
+      <stop offset="100%" stop-color="#240065"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff8b00"/>
+      <stop offset="50%" stop-color="#ff007a"/>
+      <stop offset="100%" stop-color="#5f2eff"/>
+    </linearGradient>
+    <linearGradient id="arc" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00ffd1"/>
+      <stop offset="50%" stop-color="#00a2ff"/>
+      <stop offset="100%" stop-color="#ff2fb9"/>
+    </linearGradient>
+  </defs>
+  <rect width="620" height="420" fill="url(#midnight)"/>
+  <path d="M120 320 C160 180 280 80 370 100 C430 110 500 150 520 250 C530 310 490 340 440 352 C380 366 310 364 220 350 C160 342 120 360 120 320 Z" fill="url(#hair)" stroke="#ffe066" stroke-width="8"/>
+  <path d="M150 290 C230 220 450 230 500 300" fill="none" stroke="url(#arc)" stroke-width="12" stroke-dasharray="24 18" stroke-linecap="round"/>
+  <circle cx="460" cy="160" r="30" fill="#00ffd1" opacity="0.6"/>
+  <circle cx="410" cy="120" r="18" fill="#ffe066" opacity="0.7"/>
+  <circle cx="175" cy="205" r="22" fill="#ff2fb9" opacity="0.7"/>
+  <text x="310" y="380" text-anchor="middle" font-family="'Impact', sans-serif" font-size="46" fill="#ffffff">
+    POMPADOUR FREQUENCY
+  </text>
+</svg>

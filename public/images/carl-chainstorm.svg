@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 420">
+  <defs>
+    <radialGradient id="storm" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#1c0133"/>
+      <stop offset="60%" stop-color="#470061"/>
+      <stop offset="100%" stop-color="#05020c"/>
+    </radialGradient>
+    <linearGradient id="chain" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffe066"/>
+      <stop offset="50%" stop-color="#ff9d00"/>
+      <stop offset="100%" stop-color="#ff2fb9"/>
+    </linearGradient>
+    <linearGradient id="shock" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00ffd1"/>
+      <stop offset="100%" stop-color="#ff5ce8"/>
+    </linearGradient>
+  </defs>
+  <rect width="620" height="420" fill="url(#storm)"/>
+  <g fill="none" stroke="url(#chain)" stroke-linecap="round">
+    <path d="M140 90 C200 170 180 260 120 340" stroke-width="14" opacity="0.8"/>
+    <path d="M210 70 C290 150 270 270 180 360" stroke-width="12" opacity="0.65"/>
+    <path d="M360 60 C450 150 420 280 320 360" stroke-width="14" opacity="0.85"/>
+    <path d="M430 80 C520 150 500 260 420 340" stroke-width="12" opacity="0.75"/>
+  </g>
+  <g stroke="url(#shock)" stroke-width="6" opacity="0.9">
+    <circle cx="240" cy="210" r="110" fill="none" stroke-dasharray="12 16"/>
+    <circle cx="360" cy="210" r="140" fill="none" stroke-dasharray="18 20"/>
+  </g>
+  <path d="M250 190 L310 110 L370 190 L340 190 L340 260 L280 260 L280 190 Z" fill="url(#shock)" stroke="#ffffff" stroke-width="5" opacity="0.8"/>
+  <text x="310" y="370" text-anchor="middle" font-family="'Impact', sans-serif" font-size="44" fill="#ffffff">
+    CHAINSTORM FIELD
+  </text>
+</svg>

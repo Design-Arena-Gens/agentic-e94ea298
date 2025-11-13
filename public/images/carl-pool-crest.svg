@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 420">
+  <defs>
+    <linearGradient id="pool" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff"/>
+      <stop offset="50%" stop-color="#0077ff"/>
+      <stop offset="100%" stop-color="#0a1a62"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="55%" stop-color="#ffe066" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#ff007a" stop-opacity="0.2"/>
+    </radialGradient>
+  </defs>
+  <rect width="620" height="420" fill="#020613"/>
+  <rect x="26" y="26" width="568" height="368" rx="42" fill="url(#pool)" stroke="#ff2fb9" stroke-width="5" opacity="0.9"/>
+  <ellipse cx="310" cy="200" rx="210" ry="140" fill="url(#halo)" opacity="0.8"/>
+  <g fill="none" stroke="#ffffff" stroke-width="6">
+    <path d="M180 160 C220 120 400 120 440 160" opacity="0.85"/>
+    <path d="M160 210 C240 150 380 150 460 210" opacity="0.7"/>
+    <path d="M140 260 C250 200 370 200 480 260" opacity="0.55"/>
+  </g>
+  <circle cx="310" cy="180" r="86" fill="#0a0e25" stroke="#ffe066" stroke-width="6"/>
+  <path d="M310 114 L338 222 L310 206 L282 222 Z" fill="#ffe066" stroke="#00f0ff" stroke-width="4"/>
+  <rect x="280" y="200" width="60" height="48" rx="12" fill="#ff2fb9" opacity="0.9"/>
+  <text x="310" y="340" fill="#ffffff" font-family="Impact, sans-serif" font-size="48" text-anchor="middle">
+    POOL CREST
+  </text>
+</svg>
